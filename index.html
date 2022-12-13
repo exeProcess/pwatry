@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Coursework 3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lessons.js"></script>
+  <link rel="manifest" href="lessonsApp.webmanifest" crossorigin="use-credentials">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    };
+  </script>
+</head>
+
+<body>
+  <div id="lessons">
+    <div class="card" v-for="(lesson, index) in lessons">
+      <div class="left">
+        <img width="300" height="300" :src="lesson.img">
+      </div>
+      <div class="right">
+        <div class="product-info">
+          <div class="product-name">
+            <h1>{{ lesson.subject }}</h1>
+          </div>
+          <br>
+          <div class="details">
+            <li>{{ lesson.description }}</li>
+            <h3>🤑 £{{ lesson.price }}</h3>
+            <h4>{{ lesson.location }}</h4>
+            <h4>Spaces left: {{ lesson.spaces }}</h4>
+          </div>
+          <br>
+          <div class="treat-wrapper">
+            <button class="btn draw-border" id="addToCart" v-on:click="reduce(index)">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+  new Vue({
+    el: '#lessons',
+    data: {
+      lessons: lessons,
+    },
+    methods: {
+      reduce: function (index) {
+        this.lessons[index].spaces--;
+        if (this.lessons[index].spaces == 0) {
+          document.getElementById("addToCart").disabled = true;
+          document.getElementById("addToCart").innerHTML = "Not Available";
+        }
+      }
+    }
+  });
+
+</script>
+
+</html>

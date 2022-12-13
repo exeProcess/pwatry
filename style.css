@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+body {
+  background-color: cadetblue;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*product info */
+
+h1 {
+  color: #3978ff;
+  font-family: "muli";
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 21px;
+  display: inline-block;
+}
+
+li {
+  font-family: "muli";
+  font-weight: bold;
+  color: white;
+}
+
+.product-name i {
+  color: #ffffff;
+  transition: 0.3s all ease;
+  margin: 0px 12px;
+}
+
+.product-name i:hover {
+  color: #3978ff;
+  cursor: pointer;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 24px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 29px;
+}
+
+h4 {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h4.dis {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 30px;
+  text-decoration: line-through #ea3201;
+}
+
+h4.dis span {
+  text-decoration: line-through #ea3201;
+}
+
+.card {
+  background-color: darkblue;
+  width: 300px;
+  border: 15px solid blue;
+  padding: 50px;
+  margin-left: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.btn {
+  background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
