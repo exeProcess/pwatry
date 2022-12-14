@@ -8,17 +8,27 @@
   <title>Coursework 3</title>
   <link rel="stylesheet" href="style.css">
   <script src="lessons.js"></script>
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="manifest" href="lessonsApp.webmanifest" crossorigin="use-credentials">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <script>
-    if ('serviceWorker' in navigator) {
+   /* if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js');
-    };
+    };*/
   </script>
 </head>
 
 <body>
-  <div id="lessons">
-    <div class="card" v-for="(lesson, index) in lessons">
+  <div id="lessons" class="pt-4">
+ 
+      <div class="col-9 mx-auto h-75 container-1">
+        
+      </div>
+      <div class="col-9 mx-auto h-25 container-2">
+        <h6 class="text-white text-center welcome">Welcome To</h6>
+      </div>
+  
+    <!--div class="card" v-for="(lesson, index) in lessons">
       <div class="left">
         <img width="300" height="300" :src="lesson.img">
       </div>
@@ -40,7 +50,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
   </div>
 </body>
 
