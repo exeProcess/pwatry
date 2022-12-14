@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script>
-    if ('serviceWorker' in navigator) {
+   if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js');
     };
   </script>
@@ -22,9 +22,22 @@
 <body>
   <div id="lessons" class="pt-4">
       <div class="fader"></div>
-      <div class="col-9 mx-auto h-25 container-2">
+      <div class="h-25 container-2">
         <h6 class="text-white text-center welcome">Welcome To</h6>
-        <h5 class="text-danger text-center org text-wrap">GRO ACADEMY</h5>
+        <h5 class="text-danger text-center org text-nowrap">GRO ACADEMY</h5>
+        <div class="infopane">
+          <p class="text-white">
+            The one-stop digital solution with engaging learning resources, 
+            lecture notes, mock tests, model answers, quizzes and video 
+            lectures, which will help students prepare better for 
+            competitive examinations any time and any where
+          </p>
+          <div class="d-grid gap-2">
+            <button class="btn btn-block btn-gro-danger">
+              Get Started
+            </button>
+          </div>
+        </div>
       </div>
   </div>
 </body>
