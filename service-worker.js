@@ -4,7 +4,7 @@ let cacheFiles = [
   "index.html",
   "lessons.js",
   "dist/css/bootstrap.min.css",
-  "img/bg.png",
+  "img/bg.ng",
   "lessonsApp.webmanifest",
   "img/icon.png",
   "img/cs.jpg",
