@@ -92,7 +92,7 @@ h4.dis span {
   position: absolute;
   left: 0;
   right: 0;
-  box-shadow: inset -10px -20px 10px 20px rgb(4, 15, 108) !important;
+  box-shadow: inset -10px -20px 10px 40px rgb(4, 15, 108) !important;
   background:  url('./img/bg.png') no-repeat fixed center center, linear-gradient(rgb(3, 12, 103), rgb(4,15,108)) fixed;
 }
 
