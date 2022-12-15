@@ -3,6 +3,7 @@ let cacheName = "lessonsApp-v1";
 let cacheFiles = [
   "index.html",
   "lessons.js",
+  "views/home2.html",
   "dist/css/bootstrap.min.css",
   "img/bg.png",
   "lessonsApp.webmanifest",

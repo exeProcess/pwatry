@@ -85,22 +85,47 @@ h4.dis span {
   left: 0;
   right: 0;
   box-shadow: inset -10px -20px 10px 20px rgb(4, 15, 108) !important;
-  background:  url('./img/bg.png') no-repeat fixed center center, linear-gradient(rgb(3, 12, 103), rgb(4,15,108)) fixed;
 }
 .img-container{
   margin: auto;
   position: absolute;
   left: 0;
   right: 0;
-  box-shadow: inset -10px -20px 10px 40px rgb(4, 15, 108) !important;
-  background:  url('./img/bg.png') no-repeat fixed center center, linear-gradient(rgb(3, 12, 103), rgb(4,15,108)) fixed;
-}
+  background-image: url('./img/bg.png') no-repeat fixed center, linear-gradient(rgb(3, 12, 103), rgb(4,15,108)) fixed;
 
+}
+.info-pane{
+  height:80%;
+  width: 240px;
+  border-radius: 48px;
+}
+.info-pane p {
+  font-size: 0.72em;
+}
+.container2{
+  height:55%;
+  position: absolute;
+  bottom: 0;
+
+}
+.img-container2{
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height:45%;
+}
 .welcome{
   margin-top: -100px;
   font-family: 'Poppins', sans-serif;
   font-size: 2.7em;
   margin-left: -50px;
+}
+.welcome-home2{
+ color: #06167F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 .fader{
   position: absolute;
