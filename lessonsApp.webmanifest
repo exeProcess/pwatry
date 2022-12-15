@@ -1,7 +1,7 @@
 {
-    "name": "After School App PWA",
-    "short_name": "AfterSchool",
-    "description": "This App is for odering lessons after school for children",
+    "name": "GRO Academy",
+    "short_name": "GRO",
+    "description": "This App is an E-learning application",
     "icons": [
         {
             "src": "img/icon.png",
