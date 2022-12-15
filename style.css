@@ -98,7 +98,14 @@ h4.dis span {
 .info-pane{
   height:auto;
   width: 240px;
-  border-radius: 48px;
+  border-radius: 30px;
+}
+.infopane2{
+  width: 40px !important;
+  border-radius: 30px;
+  position: absolute;
+  left: 840px;
+  height: 250px;
 }
 .info-pane p {
   font-size: 0.72em;
