@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.fibsil",
+      "sha256_cert_fingerprints": ["79:92:7A:9F:5B:B8:42:84:30:B0:77:C5:56:C1:A0:47:DD:66:8C:C2:E5:F1:81:83:65:04:B0:C1:FC:65:3E:C7"]
+    }
+  }
+]
