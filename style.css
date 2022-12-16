@@ -2,6 +2,7 @@
 
 body {
   background-color: cadetblue;
+  overflow-y: hidden;
 }
 
 /*reset*/
@@ -115,7 +116,7 @@ h4.dis span {
 
 .form-holder{
   position:absolute;
-  height: 390px;
+  height: 480px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin:auto;
