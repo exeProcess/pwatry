@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Coursework 3</title>
+  <link rel="stylesheet" href="../../style.css">
+  <script src="../../lessons.js"></script>
+  <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+  <link rel="manifest" href="../../lessonsApp.webmanifest" crossorigin="use-credentials">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script>
+   /*if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    };*/
+  </script>
+  <style>
+    body{
+      overflow-y: hidden !important;
+    }
+    .btn-primary{
+      background-color: #051276 !important;
+    }
+    .bg{
+      background-image: url('./img/authbg.png');
+      border: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="lessons" class="pt-3 lesson">
+    <div class="w-100 mx-auto py-2 px-3 h-auto">
+      <a href="#" class="text-white text-decoration-none float-start"><i class="fa-solid fa-arrow-left-long"></i></i></a> 
+    </div>
+    <!--div class="img-container">
+      <img src="./img/authbg.png" alt="" class="img-resize">
+    </div-->
+    <div class="header-text text-center">
+        <h6 class="text-white text">Login to your account</h6>
+    </div>
+    <div class="w-100 mx-auto img-container2 d-flex justify-content-center align-items-center py-4">
+      <img src="../../img/authbg.png" alt="" class="img-resize">
+    </div>
+    <div class="form-holder px-3 pt-4">
+        <form class="px-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 text-end">
+                <label for="pass" class="text-danger form-label">Forgot password?</label>
+            </div>
+            <div class="mb-3">
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary rounded-pill" type="button">Button</button>
+              </div>
+            </div>
+         </form>
+          
+    </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://kit.fontawesome.com/2784015338.js" crossorigin="anonymous"></script>
+<script>
+
+  new Vue({
+    el: '#lessons',
+    data: {
+      lessons: lessons,
+    },
+    methods: {
+      reduce: function (index) {
+        this.lessons[index].spaces--;
+        if (this.lessons[index].spaces == 0) {
+          document.getElementById("addToCart").disabled = true;
+          document.getElementById("addToCart").innerHTML = "Not Available";
+        }
+      }
+    }
+  });
+
+</script>
+
+</html>

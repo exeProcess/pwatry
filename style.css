@@ -93,13 +93,72 @@ h4.dis span {
   background-color: rgb(5, 13, 103);
 }
 .img-resize{
-  height: 480px;
+  height: 400px;
 }
 .info-pane{
   height:270px;
   width: 240px;
   border-radius: 30px;
   margin-top: 30px;
+}
+.slider-indicator {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 111px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+
+.form-holder{
+  height: 600px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 390px;
+  margin:auto;
+  margin-top:120px;
+  opacity: 1;
+  background: #ffffff;
+}
+
+.header-text{
+  position: absolute;
+  top:90px;
+  left: 0;
+  right:0;
+}
+.text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  font-weight:600;
+}
+.slider-indicator li {
+  width: 8px;
+  height: 8px;
+  margin: 2px 7px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: rgb(196, 156, 170);
+  transition: all .25s;
+  cursor: pointer;
+}
+
+.slider-indicator li.active {
+  margin: 0 5px;
+  border-radius: 3px;
+  width: 6px;
+  height: 12px;
+  background-color: rgb(6,22,127);
+}
+.btn-holder{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+
 }
 .info-img {
   height: 270px;
