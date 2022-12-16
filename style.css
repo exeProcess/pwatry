@@ -114,12 +114,12 @@ h4.dis span {
 
 
 .form-holder{
-  height: 630px;
+  position:absolute;
+  height: 450px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 270px;
-  margin: auto;
-  margin-top: 120px;
+  margin:auto;
+  bottom:0;
   opacity: 1;
   background: #ffffff;
 }
