@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
 
 body {
-  background-color: cadetblue;
-  overflow-y: hidden;
+  
+  overflow-y: hidden !important;
 }
 
 /*reset*/
